@@ -65,8 +65,9 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
+ol,
 ul {
-  list-style-type: none;
+  /* list-style-type: none; */
 }
 a {
   text-decoration: none;
@@ -140,6 +141,25 @@ textarea {
   display: grid;
   row-gap: 4rem;
   padding: 2rem;
+  grid-template-rows: 300px auto;
+}
+.result img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.result h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+.result ol,
+ul {
+  padding-left: 2rem;
 }
 .input {
   border-color: transparent;
@@ -158,6 +178,16 @@ textarea {
 }
 .result p {
   color: #9fbad0;
+}
+.result pre {
+  background: var(--clr-grey-2);
+}
+.result blockquote {
+  border-left: 2px solid #66c3e6;
+  padding-left: 2rem;
+}
+.result a {
+  color: #66c3e6;
 }
 .nav {
   display: grid;
@@ -216,6 +246,7 @@ textarea {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     column-gap: 4rem;
   }
 }
