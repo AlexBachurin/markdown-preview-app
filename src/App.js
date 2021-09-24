@@ -4,7 +4,7 @@ import MarkdownPage from "./pages/MarkdownPage";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 function App() {
-  const [markdown, setMarkdown] = useState('## markdown preview')
+
   return (
     <Router>
       <Navbar />
@@ -13,7 +13,7 @@ function App() {
           <HomePage />
         </Route>
         <Route path="/markdown-editor">
-          <MarkdownPage markdown={markdown} setMarkdown={setMarkdown} />
+          <MarkdownPage />
         </Route>
       </Switch>
 

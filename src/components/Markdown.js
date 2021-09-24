@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
-const Markdown = ({ markdown, setMarkdown }) => {
+import { useGlobalContext } from '../context'
+const Markdown = () => {
+    const { markdown, handleChange } = useGlobalContext();
     return (
         <section className="markdown">
-            <textarea onChange={(e) => {
-                setMarkdown(e.target.value)
-            }} value={markdown} className="input">{markdown}</textarea>
+            <textarea onChange={handleChange} value={markdown} className="input">{markdown}</textarea>
             <article className="result">
                 <ReactMarkdown>
                     {markdown}

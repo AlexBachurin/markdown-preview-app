@@ -1,8 +1,9 @@
 import React from 'react'
 import Markdown from '../components/Markdown'
-const MarkdownPage = ({ markdown, setMarkdown }) => {
+
+const MarkdownPage = () => {
     return (
-        <Markdown markdown={markdown} setMarkdown={setMarkdown} />
+        <Markdown />
     )
 }
 
