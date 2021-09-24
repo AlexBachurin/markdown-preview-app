@@ -208,7 +208,7 @@ ul {
   text-transform: capitalize;
   color: #fff;
 }
-.home button {
+.primary-btn {
   box-sizing: border-box;
   appearance: none;
   background-color: #66c3e6;
@@ -233,9 +233,13 @@ ul {
   box-shadow: 0 0 40px 40px #66c3e6 inset, 0 0 0 0 #66c3e6;
   transition: all 150ms ease-in-out;
 }
-.home button:hover,
-.home button:focus {
+.primary-btn:hover,
+.primary-btn:focus {
   box-shadow: 0 0 10px 0 #66c3e6 inset, 0 0 10px 4px #66c3e6;
+}
+.btn-clear {
+  margin-top: 20px;
+  padding: 0.7rem 1.5rem;
 }
 
 .footer-descr {

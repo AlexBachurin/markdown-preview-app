@@ -12,9 +12,14 @@ const AppProvider = ({ children }) => {
     const handleChange = (e) => {
         setMarkdown(e.target.value);
     }
+    //clear markdown
+    const clearMarkdown = () => {
+        setMarkdown('')
+    }
     return <AppContext.Provider value={{
         markdown,
-        handleChange
+        handleChange,
+        clearMarkdown
     }}>
         {children}
     </AppContext.Provider>
