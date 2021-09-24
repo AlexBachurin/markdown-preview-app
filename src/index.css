@@ -65,10 +65,7 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
-ol,
-ul {
-  /* list-style-type: none; */
-}
+
 a {
   text-decoration: none;
 }
@@ -239,6 +236,21 @@ ul {
 .home button:hover,
 .home button:focus {
   box-shadow: 0 0 10px 0 #66c3e6 inset, 0 0 10px 4px #66c3e6;
+}
+
+.footer-descr {
+  padding: 0 4rem;
+  display: flex;
+  justify-content: center;
+}
+.footer p {
+  color: #fff;
+  margin-right: 20px;
+  text-transform: capitalize;
+}
+.footer-icon {
+  color: #fff;
+  font-size: 1.3rem;
 }
 
 @media screen and (min-width: 992px) {

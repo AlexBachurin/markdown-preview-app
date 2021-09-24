@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import MarkdownPage from "./pages/MarkdownPage";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Footer from "./components/Footer";
 function App() {
 
   return (
@@ -16,7 +17,7 @@ function App() {
           <MarkdownPage />
         </Route>
       </Switch>
-
+      <Footer />
 
     </Router>
   );
