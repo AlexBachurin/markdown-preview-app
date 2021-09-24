@@ -16,10 +16,17 @@ const AppProvider = ({ children }) => {
     const clearMarkdown = () => {
         setMarkdown('')
     }
+    //restore markdown
+    const restoreMarkdown = () => {
+        setMarkdown(initialMarkdown)
+    }
+
+
     return <AppContext.Provider value={{
         markdown,
         handleChange,
-        clearMarkdown
+        clearMarkdown,
+        restoreMarkdown
     }}>
         {children}
     </AppContext.Provider>

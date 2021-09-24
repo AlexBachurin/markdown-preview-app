@@ -152,7 +152,8 @@ h4,
 h5,
 h6 {
   color: #fff;
-  margin-bottom: 30px;
+  padding: 20px;
+  border-bottom: 1px solid var(--clr-grey-7);
 }
 .result ol,
 ul {
