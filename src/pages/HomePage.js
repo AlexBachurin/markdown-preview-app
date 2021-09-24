@@ -1,16 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Home = () => {
+const HomePage = () => {
     return (
         <div className='home'>
             <h1>Welcome to markdown editor!</h1>
             <div className="home-center">
                 <p>click button to proceed to editor</p>
-                <button>Go to editor</button>
+                <Link to="/markdown-editor"><button>Go to editor</button></Link>
             </div>
         </div>
     )
 }
 
-export default Home
+export default HomePage
 
